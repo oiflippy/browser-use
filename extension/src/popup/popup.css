@@ -1,0 +1,88 @@
+/* Popup 样式 */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.popup-container {
+  padding: 16px;
+}
+
+.section {
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.current-page-info {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.page-title {
+  font-weight: 500;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-url {
+  font-size: 12px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #3367d6;
+}
+
+.button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.status {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}

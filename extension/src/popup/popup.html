@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Use 扩展</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: 320px;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    
+    .header {
+      background-color: #4285f4;
+      color: white;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .header h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    
+    .logo {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    
+    .content {
+      padding: 16px;
+    }
+    
+    .section {
+      margin-bottom: 16px;
+    }
+    
+    .section-title {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    
+    .task-input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+    }
+    
+    .button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+    
+    .button:hover {
+      background-color: #3367d6;
+    }
+    
+    .button:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+    
+    .status {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
+    }
+    
+    .footer {
+      padding: 8px 16px;
+      border-top: 1px solid #ddd;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+    }
+    
+    .footer a {
+      color: #4285f4;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div style="display: flex; align-items: center;">
+      <img src="/assets/icon48.png" alt="Logo" class="logo">
+      <h1>Browser Use 扩展</h1>
+    </div>
+    <div id="status-indicator" style="width: 10px; height: 10px; border-radius: 50%; background-color: #4CAF50;"></div>
+  </div>
+  
+  <div class="content">
+    <div class="section">
+      <div class="section-title">当前页面</div>
+      <div id="current-page">加载中...</div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">执行任务</div>
+      <textarea id="task-input" class="task-input" rows="3" placeholder="输入您想要执行的任务..."></textarea>
+      <button id="run-task" class="button">运行</button>
+      <div id="task-status" class="status">准备就绪</div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">快速操作</div>
+      <button id="capture-page" class="button" style="margin-right: 8px;">捕获页面</button>
+      <button id="open-settings" class="button">设置</button>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <a href="https://docs.browser-use.com" target="_blank">文档</a> | 
+    <a href="https://github.com/browser-use/browser-use" target="_blank">GitHub</a> | 
+    <span>版本 0.1.0</span>
+  </div>
+  
+  <!-- 脚本将由 webpack 自动注入 -->
+</body>
+</html>
