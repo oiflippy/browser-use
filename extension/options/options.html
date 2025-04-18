@@ -1,0 +1,61 @@
+<![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browser Use Extension Settings</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 10px;
+      min-width: 300px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="url"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #status {
+      margin-top: 15px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Extension Settings</h1>
+  <form id="options-form">
+    <div>
+      <label for="apiKey">API Key:</label>
+      <input type="text" id="apiKey" name="apiKey">
+    </div>
+    <div>
+      <label for="apiUrl">API URL:</label>
+      <input type="url" id="apiUrl" name="apiUrl">
+    </div>
+    <button type="submit">Save Settings</button>
+  </form>
+  <div id="status"></div>
+  <script src="options.js"></script>
+</body>
+</html>
+]]>

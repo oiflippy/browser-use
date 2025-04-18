@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Use Side Panel</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <h1>Browser Use Automation</h1>
+    <button id="startButton">Start Automation</button>
+    <button id="stopButton" disabled>Stop Automation</button>
+
+    <hr>
+    <h2>Logs</h2>
+    <div>
+        <label for="logLevelFilter">Filter by level:</label>
+        <select id="logLevelFilter">
+            <option value="ALL">All</option>
+            <option value="INFO">Info</option>
+            <option value="WARN">Warn</option>
+            <option value="ERROR">Error</option>
+        </select>
+        <button id="clearLogsButton">Clear Logs</button>
+    </div>
+    <div id="logContainer" style="height: 200px; overflow-y: scroll; border: 1px solid #ccc; margin-top: 10px; padding: 5px; font-family: monospace; white-space: pre-wrap;">
+        <!-- Logs will be displayed here -->
+    </div>
+
+    <script src="../logger.js"></script> <!-- Include logger script -->
+    <script src="sidepanel.js"></script>
+</body>
+</html>

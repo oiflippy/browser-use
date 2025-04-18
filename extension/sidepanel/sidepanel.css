@@ -1,0 +1,95 @@
+body {
+    padding: 10px;
+    font-family: sans-serif;
+    min-width: 300px; /* Ensure sidepanel has some width */
+}
+
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#logContainer {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+}
+
+/* Log Entry Styling */
+.log-entry {
+    margin-bottom: 5px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    line-height: 1.4;
+}
+
+.log-info {
+    background-color: #eef; /* Light blue background for info */
+    border-left: 3px solid #66f;
+}
+
+.log-warn {
+    background-color: #fff3cd; /* Bootstrap warning background */
+    color: #856404; /* Bootstrap warning text */
+    border-left: 3px solid #ffc107; /* Bootstrap warning border */
+}
+
+.log-error {
+    background-color: #f8d7da; /* Bootstrap danger background */
+    color: #721c24; /* Bootstrap danger text */
+    border-left: 3px solid #dc3545; /* Bootstrap danger border */
+}
+
+.log-timestamp {
+    font-size: 0.8em;
+    color: #555;
+    margin-right: 8px;
+}
+
+.log-level {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.log-message {
+    /* Standard message styling */
+}
+
+.log-details {
+    font-size: 0.9em;
+    margin-left: 20px;
+    margin-top: 3px;
+    background-color: rgba(0,0,0,0.05);
+    padding: 5px;
+    border-radius: 3px;
+    display: block; /* Ensure pre takes block layout */
+    white-space: pre-wrap; /* Wrap long lines in details */
+    word-break: break-all; /* Break long words/strings */
+}
+
+label {
+    margin-right: 5px;
+}
+
+select {
+    margin-right: 10px;
+}
